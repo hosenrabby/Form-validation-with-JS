@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="form_validation">
+                    <h2>Sign Up</h2>
+                    <p>Let's Create Your Account.</p>
+                    <form name="form" class="row" action="" method="POST" onsubmit="dataSubmit();return false">
+                        <div class="col-6">
+                            <input type="text" class="form-control" name="fname" id="fn" placeholder="First name">
+                            <span id="f_err" hidden><small>Enter first name.</small></span>
+                        </div>
+                        <div class="col-6">
+                            <input type="text" class="form-control" name="lname" id="ln" placeholder="Last name">
+                            <span id="l_err" hidden><small>Enter last name.</small></span>
+                        </div>
+                        <div class="col-12">
+                            <input type="email" class="form-control" name="email" id="em" placeholder="Type valid email"
+                                onkeyup="validemail()">
+                            <span id="e_err"><small></small></span>
+                        </div>
+                        <div class="col-6">
+                            <input type="number" class="form-control" name="phone" id="pn" placeholder="Phone Number">
+                            <span id="p_err" hidden><small>Enter your valid phone
+                                    number.</small></span>
+                        </div>
+                        <div class="col-6">
+                            <input type="date" class="form-control" name="bdate" id="bd" placeholder="Birth Date">
+                            <span id="bd_err" class="invalid_msg" hidden><small>Set your Date of Birth.</small></span>
+                        </div>
+                        <div class="col-12">
+                            <select class="form-select" name="divisin" id="divi">
+                                <option value="" selected>Select Your Devision</option>
+                                <option value="Dhaka">Dhaka</option>
+                                <option value="Sylet">Sylet</option>
+                                <option value="Comilla">Comilla</option>
+                                <option value="Rajsahi">Rajsahi</option>
+                            </select>
+                            <span id="divi_err" hidden><small>Select your Division.</small></span>
+                        </div>
+
+
+                        <div class="col-3">
+                            <label style="margin-top:8px;" class="form-check-label" for="">Education</label>
+                        </div>
+                        <div class="col-3">
+                            <input class="form-check-input" type="checkbox" name="dip" id="dp" value="DIPLOMA">
+                            <label style="margin-top:8px;" class="form-check-label" for="dp">Diploma</label><br>
+
+                            <input class="form-check-input" type="checkbox" name="bsc" id="bsc" value="BSC">
+                            <label style="margin-top:8px;" class="form-check-label" for="bsc">BSC</label><br>
+
+                            <input class="form-check-input" type="checkbox" name="msc" id="msc" value="MSC">
+                            <label style="margin-top:8px;" class="form-check-label" for="msc">MSC</label>
+                        </div>
+
+                        <div class="col-3">
+                            <label style="margin-top:8px;" class="form-check-label" for="gndr">Gander</label>
+                        </div>
+                        <div class="col-3">
+                            <input class="form-check-input" type="radio" name="gndr" id="ml" value="Male">
+                            <label style="margin-top:8px;" class="form-check-label" for="ml">Male</label><br>
+
+                            <input class="form-check-input" type="radio" name="gndr" id="fml" value="Female">
+                            <label style="margin-top:8px;" class="form-check-label" for="fml">FeMale</label><br>
+
+                            <input class="form-check-input" type="radio" name="gndr" id="otr" value="Other">
+                            <label style="margin-top:8px;" class="form-check-label" for="otr">Other</label>
+                        </div>
+
+                        <div class="col-12">
+                            <textarea name="about" id="abt" cols="62" rows="5"
+                                placeholder="Say About Yourself."></textarea>
+                        </div>
+
+                        <div class="col-12">
+                            <button class="btn btn-outline-dark" name="submit" id="btn">SUBMIT</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(to right, #FF0768, #FA5B3E);
+}
+.form_validation{
+    background-color: #fff;
+    display: block;
+    margin: 10px 15px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.form_validation form input, select,textarea{
+    border: none;
+    border-radius: 4px;
+    box-shadow: 1px 2px 2px;
+    margin: 12px 0px;
+}
+.form_validation button{
+    padding: 6px 22px;
+    letter-spacing: 3px;
+}
+.err_msg{
+    color: #b80505;
+    padding-left: 5px;
+}
+.success_msg{
+    color: #07b607de;
+    padding-left: 5px;
+}
+.input_err{
+    border: 1px solid #b80505 !important;
+    color: #b80505;
+}
+.input_success{
+    border: 1px solid #07b607de !important;
+    color: #07b607de;
+}
